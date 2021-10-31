@@ -29,15 +29,23 @@ java -javaagent:NekoAgent-1.0-SNAPSHOT.jar=enableStoneCutterDamage+enableShulker
 
 ## 可用参数
 
-- enableSandDuplication
+- *允许末地传送门刷沙机制*
+- enableSandDuplication 
+- *禁止末地黑曜石柱生成*
 - disableObsidianSpikesReset
+- *允许切石机对玩家等实体造成伤害*
 - enableStoneCutterDamage
+- *允许潜影贝在末地城内生成*
 - enableShulkerSpawningInEndCities
+- *允许玩家使用栓绳牵引村民*
 - enableLeashableViallagers
+- *启用 `/mspt` 指令*
 - enableSetMSPTCommand
+- *启用虚假的权限等级4*
 - enableFakePermissionLevel4
-- maxShulkersCount=4
-- minShulkersCount=1
+- *设置潜影贝生成数*
+- maxShulkersCount=数字
+- minShulkersCount=数字
 
 ## 构建
 
