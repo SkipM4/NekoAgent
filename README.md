@@ -1,5 +1,9 @@
 # NekoAgent
 
+**[简体中文](README_CN.md)**
+
+## A Project Aims To Customize Your PaperMC Server Features
+
 ## Features
 
 - Allow sand duplication.
