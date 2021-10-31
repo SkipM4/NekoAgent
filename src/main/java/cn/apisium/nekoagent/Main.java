@@ -72,7 +72,7 @@ public final class Main {
                             ((double)Math.round($1 * 100.0D) / 100.0D); }""");
                     System.out.println("[NekoAgent] Class " + className + " has been modified!");
                     return clazz.toBytecode();
-                } catch (Throwable e) { throw new RuntimeException(e); }
+                } catch (Exception e) { e.printStackTrace(); }
                 case "com/destroystokyo/paper/MSPTCommand": try {
                     pool.insertClassPath(new LoaderClassPath(loader));
                     CtClass clazz = pool.get(className.replace('/', '.'));
@@ -85,7 +85,7 @@ public final class Main {
                                 "[NekoAgent] Current mspt value: " + net.minecraft.server.MinecraftServer.shouldWaitTickTime); }""");
                     System.out.println("[NekoAgent] Class " + className + " has been modified!");
                     return clazz.toBytecode();
-                } catch (Throwable e) { throw new RuntimeException(e); }
+                } catch (Exception e) { e.printStackTrace(); }
             }
             if (!className.startsWith("net/minecraft/")) return null;
             className = className.replace('/', '.');
